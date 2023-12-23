@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statement Cash Flows</title>
+    <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: scroll;
+            height: 150vh; 
+        }
+
+        header {
+            background-color:#2c3e50; 
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px;
+            padding-bottom: 5px;
+            margin-top: -35px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px  #456686;
+            font-family: 'PTSansNarrow';
+            font-size: 20px;
+        }
+
+        header p {
+            font-family: Comfortaa;
+            font-size: 15px;
+            color: #ecf0f1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+
+        #popup-container {
+            position: fixed;
+            top: 0;
+            right: -300px; /* Initially hide the popup to the right */
+            width: 300px;
+            height: 100%;
+            background-color: #3498db;
+            transition: right 0.3s ease-in-out;
+            z-index: 1;
+        }
+
+        #popup-content {
+            padding: 20px;
+        }
+
+        #open-popup-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 2; 
+        }
+
+        .tabs a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            display: block;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .tabs a:hover {
+            background-color:#457494;
+        }
+
+        h2 {
+            font-family: AbrilFatface;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        table{
+            border: 2px solid #3498db;
+        }
+        th {
+            font-family: Comfortaa;
+        }
+
+        td {
+            font-family: Comfortaa;
+            border: 2px solid #3498db;
+        }
+
+    </style>
+</head>
+<body> 
+    <header>
+        <h1 style="text-align: center">Accounting Website 2023</h1>
+        <a href="University-of-Cebu-Logo.jpg">  
+            <img src="University-of-Cebu-logo.jpg" alt="University-of-Cebu-Logo" id="logo">
+        </a>
+            <p>By Bajenting, Gorzon, Balongkit & Decierdo.</p>
+    </header>
+        <button id="open-popup-btn">&#8594; Open Tabs</button>
+    <div id="popup-container">
+        <div id="popup-content" class="tabs">
+            <ul class="tabs">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="general_ledger.html">General Ledger Accounts</a></li>
+                <li><a href="journalize_transaction.html">Journalize Transaction</a></li>
+                <li><a href="worksheet.html">Worksheet</a></li>
+                <li><a href="income_statements.html">Income Statements</a></li>
+                <li><a href="statements_of_changes_in_equity.html">Statements of Changes in Equity</a></li>
+                <li><a href="balance_sheet.html">Balance Sheet</a></li>
+                <li><a href="cash_flows.html">Statement Cash Flows</a></li>
+                <li><a href="adjusting_entries.html">Adjusting Entries</a></li>
+                <li><a href="closing_entries.html">Closing Entries</a></li>
+                <li><a href="post_closing_trial_balance.html">Post-Closing Trial Balance</a></li>
+                <li><a href="reversing_entries.html">Reversing Entries</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section id="CashFlowsContent" style="text-align: center">
+    <h2>
+      Statement Cash Flows
+    </h2>
+    <table>
+        <tr>
+            <th style="border: none;">Cash Flows from Operating Activities:</th>
+            <th style="border: none;"></th>
+            <th style="border: none;"></th>
+        </tr>
+        <tr>
+            <td style="border: none;">Net Income </td>
+            <td style="border: none;">52,900</td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Add:</b></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+        </tr>    
+        <tr>
+            <td style="border: none;">Depreciation Expense</td>
+            <td style="border: none;">800</td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Less:</b></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+        </tr> 
+        <tr>
+            <td style="border: none;">Increase in Accounts Receivable </td>
+            <td style="border: none;">48,000</td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;">Increase in Fees Receivable</td>
+            <td style="border: none;"> 10,000</td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;">Increase in Supplies </td>
+            <td style="border: none;">4,700</td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Add:</b></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+        </tr>    
+        <tr>
+            <td style="border: none;">Increase in Salaries Payable</td>
+            <td style="border: none;">1,800</td>
+            <td style="border: none;"></td>
+        </tr>
+
+        <tr>
+            <td style="border: none;"><b>Total Net Cash from Operations:</b></td>
+        <td style="border: none;" bgcolor="f2f2f2"><b>(7,200)</b></td>
+        </tr>
+        <tr>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <th style="border: none;">Cash Flows from Investing Activities:</th>
+            <th style="border: none;"></th>
+            <th style="border: none;"></th>
+        </tr>
+        <tr>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Cash Outflows:</b></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;">Cash paid for Office Equipment</td>
+            <td style="border: none;">37,000</td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Total Net Cash from Investing Activities:</b></td>
+        <td style="border: none;" bgcolor="f2f2f2"><b>37,000</b></td>
+        </tr>
+        <tr>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <th style="border: none;">Cash Flows from Financing Activities:</th>
+            <th style="border: none;"></th>
+            <th style="border: none;"></th>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Cash Inflows:</b></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Detoya's Initial Investment</b></td>
+            <td style="border: none;">150,000</td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Cash Outflows:</b></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Detoya's Withdrawal</b></td>
+            <td style="border: none;">12,000</td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Total Net Cash from Financing Activities:</b></td>
+        <td style="border: none;" bgcolor="f2f2f2"><b>138,000</b></td>
+        </tr>
+        <tr>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Net Increase (Decrease) in Cash </b></td>
+            <td style="border: none;" bgcolor="f2f2f2"><b>93,800</b></td>
+        </tr>
+        <tr>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Cash - Beginning</b></td>
+        <td style="border: none;" bgcolor="f2f2f2"><b>0</b></td>
+        </tr>
+        <tr>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+            <td style="border: none;"></td>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Cash - Ending </b></td>
+        <td style="border: none;" bgcolor="f2f2f2"><b>93,800</b></td>
+        </tr>
+    </table>
+</section>
+<script>
+    document.getElementById('open-popup-btn').addEventListener('click', function() {
+      const popupContainer = document.getElementById('popup-container');
+      popupContainer.style.right = (popupContainer.style.right === '0px') ? '-300px' : '0px';
+    });
+  </script>
+</body>
+</html>

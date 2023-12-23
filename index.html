@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            height: 129vh;
+            overflow: scroll;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .tabs-container {
+            display:flex;
+            flex-direction: column;
+            background-color: #457494;
+        }
+
+        .tabs {
+            list-style: none;
+            padding: 0;
+            margin: 0;   
+        }
+
+        .tabs a {
+            text-decoration: none;
+            color: #fff;
+            padding: 22px;
+            width: 130px;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .tabs a:hover {
+            background-color: #3498db;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #ecf0f1;
+            flex: 1;
+        }
+        .arrow {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            margin-right: 10px;
+            border-width: 5px 0 5px 8px;
+            border-color: transparent transparent transparent #fff;
+        }
+
+        .content-container {
+            font-family: DancingScript;
+            float: right;
+            margin-top: 220px;
+            margin-left: 210px;
+            position: fixed;
+        }
+
+        .content-container h2 {
+            margin-top: 0; 
+            margin-bottom: 100px;
+            font-style: bold;
+            font-size: 30px;
+        }
+
+        .content-container p {
+            font-family: Lobster;
+            font-size: larger;
+            margin-top: -5px; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 style="text-align: center">Accounting Website 2023</h1>
+    <a href="University-of-Cebu-Logo.jpg">  
+        <img src="University-of-Cebu-logo.jpg" alt="University-of-Cebu-Logo" id="logo">
+    </a>
+        <p>By Bajenting, Gorzon, Balongkit & Decierdo.</p>
+    </header>
+<nav>
+    <div class="content-container">
+        <h2>"The word accounting comes from the word accountability. If you are going to be rich, you need to be accountable for your money."</h2>
+        <p>~Robert Kiyosaki~</p>
+    </div>
+    <div class="container">
+        <div class="tabs-container">
+          <ul class="tabs">
+            <li><a href="general_ledger.html"><span class="arrow"></span>General Ledger Accounts</a></li>
+            <li><a href="journalize_transaction.html"><span class="arrow"></span>Journalize Transaction</a></li>
+            <li><a href="worksheet.html"><span class="arrow"></span>Worksheet</a></li>
+            <li><a href="income_statements.html"><span class="arrow"></span>Income Statements</a></li>
+            <li><a href="statements_of_changes_in_equity.html"><span class="arrow"></span>Statements of Changes in Equity</a></li>
+            <li><a href="balance_sheet.html"><span class="arrow"></span>Balance Sheet</a></li>
+            <li><a href="cash_flows.html"><span class="arrow"></span>Statement Cash Flows</a></li>
+            <li><a href="adjusting_entries.html"><span class="arrow"></span>Adjusting Entries</a></li>
+            <li><a href="closing_entries.html"><span class="arrow"></span>Closing Entries</a></li>
+            <li><a href="post_closing_trial_balance.html"><span class="arrow"></span>Post-Closing Trial Balance</a></li>
+            <li><a href="reversing_entries.html"><span class="arrow"></span>Reversing Entries</a></li>
+          </ul>
+        </div>
+      </div>
+</nav>
+  <footer>
+        <p>&copy; 2023 Accounting Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
